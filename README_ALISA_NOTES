@@ -1,0 +1,17 @@
+Applies to ShareLatex SpeciesEmbeddings document
+
+
+1.  All the code to generate species embeddings, using 
+phylogeny_embeddings/EmbeddingsTestBed.ipynb from github
+
+Run all the cells that have the following comment on top
+### FOR WRITEUP:  INITIAL PROCESSING
+
+run
+### FOR WRITEUP:  INITIAL PROCESSING #1
+
+throught
+### FOR WRITEUP:  INITIAL PROCESSING #21
+
+note, some cells do not appear in order
+
