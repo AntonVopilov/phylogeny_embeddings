@@ -1,7 +1,8 @@
 Applies to ShareLatex SpeciesEmbeddings document
 
+1.   Code for Section 3 (Species Embeddings)
 
-1.  All the code to generate species embeddings, using 
+ All the code to generate species embeddings, using 
 phylogeny_embeddings/EmbeddingsTestBed.ipynb from github
 
 Run all the cells that have the following comment on top
@@ -14,4 +15,41 @@ throught
 ### FOR WRITEUP:  INITIAL PROCESSING #21
 
 note, some cells do not appear in order
+
+
+2. Code for Section 4 (Sequence to Embedding Model)
+
+odify the code as necessary if paths/names have changed
+
+2.1
+All the cells that process data for the network, and then evaluate the results are in 
+phylogeny_embeddings/EmbeddingsTestBed.ipynb from github
+
+pre-preocess
+#### Code for Section 4 (Sequence to Embedding Model)   # 1
+through
+#### Code for Section 4 (Sequence to Embedding Model)   # 4
+
+evaluate
+#### Code for Section 4 (Sequence to Embedding Model)   # 5
+through
+#### Code for Section 4 (Sequence to Embedding Model)   # 6
+
+2.2
+phylogeny_embeddings/PreprocessDataForNetwork.ipynb from github
+
+randomize input files and put into h5py format
+#### Code for Section 4 (Sequence to Embedding Model)   # 1
+through
+#### Code for Section 4 (Sequence to Embedding Model)   # 4
+
+associate output of network with labels for evaluation
+#### Code for Section 4 (Sequence to Embedding Model)   # 5
+
+2.3
+phylogeny_embeddings/KerasModel_Sequence_To_Embedding.ipynb
+
+simple model code as described in the writeup, at the bottom code to write out evaluation file
+
+3. Code for Section 5 (Siamese Model)
 
