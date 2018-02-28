@@ -1,5 +1,6 @@
 Applies to ShareLatex SpeciesEmbeddings document
 
+---------------
 1.   Code for Section 3 (Species Embeddings)
 
  All the code to generate species embeddings, using 
@@ -17,9 +18,11 @@ throught
 note, some cells do not appear in order
 
 
+---------------
 2. Code for Section 4 (Sequence to Embedding Model)
 
-odify the code as necessary if paths/names have changed
+modify the code as necessary if paths/names have changed
+Also, assumes the relevant cells from (### FOR WRITEUP:  INITIAL PROCESSING...) have been run
 
 2.1
 All the cells that process data for the network, and then evaluate the results are in 
@@ -51,5 +54,69 @@ phylogeny_embeddings/KerasModel_Sequence_To_Embedding.ipynb
 
 simple model code as described in the writeup, at the bottom code to write out evaluation file
 
+---------------
+
 3. Code for Section 5 (Siamese Model)
+
+modify the code as necessary if paths/names have changed
+Also, assumes the relevant cells from (### FOR WRITEUP:  INITIAL PROCESSING...) have been run
+
+3.1
+All the cells that process data for the network (no evaluation in this case) are in
+phylogeny_embeddings/EmbeddingsTestBed.ipynb from github
+
+pre-preocess
+#### Code for Section 5 (Siamese Model)   # 1
+through
+#### Code for Section 5 (Siamese Model)   # 4
+
+get avg phylogenetic distance between leaf nodes
+#### Code for Section 5 (Siamese Model)   # 5 & 6
+
+3.2
+
+phylogeny_embeddings/PreprocessDataForNetwork.ipynb from github
+
+randomize input files and put into h5py format
+#### Code for Section 5 (Siamese Model)   # 1
+through
+#### Code for Section 5 (Siamese Model)   # 5
+
+associate output of network with labels for evaluation - no further work because mean error is too high 
+#### Code for Section 5 (Siamese Model)   # 6
+
+3.3
+phylogeny_embeddings/KerasModel_TwinSequences.ipynb
+
+siamese model code as described in the writeup, at the bottom code to write out evaluation file
+
+---------------
+
+4. Code for Section 6 (Assesement of Data with Binary Classification)
+
+modify the code as necessary if paths/names have changed
+Also, assumes the relevant cells from (### FOR WRITEUP:  INITIAL PROCESSING...) have been run
+
+4.1 
+All the cells that process data for the network (no evaluation in this case) are in
+phylogeny_embeddings/EmbeddingsTestBed.ipynb from github
+
+pre-preocess
+#### Code for Section 6 (Classification Model)   # 1
+and
+#### Code for Section 6 (Classification Model)   # 2
+
+4.2 
+phylogeny_embeddings/PreprocessDataForNetwork.ipynb from github
+
+randomize input files and put into h5py format
+#### Code for Section 6 (Classification Model)   # 1
+through
+#### Code for Section 6 (Classification Model)   # 4
+
+4.3 
+phylogeny_embeddings/KerasModel_Pairs_Pos_Neg.ipynb
+
+Classification model code as described in the writeup
+---------------
 
